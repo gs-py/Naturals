@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HellDev
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .marque {
+            background: #25693f;
+        }
+
+        .topbar {
+            display: flex;
+            /* flex-wrap: wrap; */
+            max-height: 155px;
+
+
+            width: 100%;
+            height: 155px;
+            background-color: rgba(249, 193, 39, 255);
+            justify-content: space-between;
+            align-items: center;
+
+            padding-left: 30px;
+            padding-right: 30px;
+
+
+        }
+
+
+        .header {
+            width: 185px;
+            height: 107px;
+        }
+
+        .toprightbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .imgsection {
+            /* width: 100%;
+            display: flex;
+            height: 1300px;
+            background-size: cover;
+            background-position: center;
+            /* justify-content: center;
+            align-items: center; */
+            /* Set a height for the div */
+
+            width: 100%;
+            height: 100vh;
+
+
+            /* Set initial background image */
+            background-size: cover;
+            /* Ensure the image covers the entire div */
+            background-position: center;
+            /* Center the image */
+
+            /* animation: changeBackground 8s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite; */
+            animation: changeBackground 8s steps(1) infinite;
+
+        }
+
+
+
+        @keyframes changeBackground {
+            0% {
+                background-image: url('Ghee_website_Banner.webp');
+            }
+
+            50% {
+                background-image: url('secon.webp');
+            }
+
+            100% {
+                background-image: url('Ghee_website_Banner.webp');
+            }
+        }
+
+        .products {
+            padding: 25px;
+
+
+        }
+
+        .productshead {
+            display: flex;
+            font-size: 60px;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+        }
+
+        .pdisplay {
+            display: flex;
+
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+
+
+        .pim {
+            width: 321px;
+            height: 321px;
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .imgwrapper h5,
+        .imgwrapper h6 {
+
+            text-align: center;
+
+        }
+
+        .imgwrapper {
+            margin-bottom: 10px;
+        }
+
+        .abtimage {
+            position: relative;
+            width: 100%;
+        }
+
+        .abtimage img {
+            width: 100%;
+            height: auto;
+        }
+
+        .abouttext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            /* Adjust text color as needed */
+            text-align: center;
+            font-size: 36px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            /* Adjust font size as needed */
+            padding: 10px;
+            /* Optional: adds some padding around the text */
+
+
+        }
+
+        .quality {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 80px;
+
+
+        }
+
+        .quality>div {
+            justify-content: center;
+            width: 25%;
+            text-align: center;
+
+        }
+
+        .quality p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .quality img {
+            padding: 20px;
+            border-radius: 100%;
+            margin-bottom: 30px;
+            width: 112px;
+            height: 112px;
+        }
+
+        .pure {
+            display: block;
+        }
+
+        .pure h1 {
+            font-size: 200px;
+
+            font-weight: bolder;
+
+            text-align: center;
+
+            background: linear-gradient(to bottom, rgba(37, 105, 63, 255), rgba(227, 223, 22, 0.913));
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+
+        /* .founder {
+            display: flex;
+            justify-content: center;
+        }
+
+        .founder>div {
+            width: 85%;
+            background: yellow;
+        }
+
+        .about {
+            /* width="668px" height="890.27" */
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Mraqueee -->
+        <div class="marque">
+            <marquee>* Start Learining Now *</marquee>
+        </div>
+        <!-- top bar -->
+        <div class="topbar">
+            <i class="fa fa-bars"></i>
+
+            <div class="headerlogo"><img class="header" src="logo.avif"></div>
+            <div class="toprightbar">
+                <div><i class="fa fa-search"></i></div>
+                <div><i class="fa fa-cart-plus"></i></div>
+            </div>
+        </div>
+        <!-- Img section -->
+        <div class="imgsection" id="image-section">
+        </div>
+
+        <!-- product Section -->
+        <div class="products">
+            <h1 class="productshead">Go Natural ,Go Healthy.</h1>
+            <div class="pdisplay">
+
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/1.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/2.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/3.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/4.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/5.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/6.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/7.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/8.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/9.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+                <div class="imgwrapper">
+                    <img class="pim" src="./pimages/10.webp">
+                    <h5>Small bee Honey</h5>
+                    <h6>Rs 1500</h6>
+                </div>
+            </div>
+        </div>
+        <div class="abtimage">
+            <img src="aboutim.webp" width="100%">
+            <h3 class="abouttext">We Are The One-stop Destination For A Wide Range Of Organic And
+                Naturally Grown Foods</h3>
+        </div>
+        <!-- div spec -->
+        <div class="quality">
+
+            <div>
+                <img src="q1.avif" style="background-color: #25693f;">
+                <h3>Farm to table Freshness</h3><br>
+                <p>Enjoy the vibrant flavors and superior quality of food that has been carefully harvested and brought
+                    straight to your
+                    doorstep.</p>
+
+            </div>
+
+            <div>
+                <img src="q3.avif" style="background-color: #25693f;">
+                <h3>Nutritional Excellence</h3><br>
+                <p>Our Products are packed with essential nutrients, vitamins, and minerals, providing customers with
+                    optimal nutrition.</p>
+            </div>
+
+            <div>
+                <img src="q2.avif" style="background-color: #25693f;">
+                <h3>Pure and Clean Ingredients</h3><br>
+                <p>Enjoy the peace of mind that comes from consuming food free from harmful chemicals, pesticides, and
+                    artificial
+                    additives.</p>
+            </div>
+
+        </div>
+        <!-- 100pure -->
+        <div>
+
+            <div class="pure">
+                <h1><b>100% Pure</b></h1>
+            </div><br>
+            <h4 style="text-align: center; color: #25693f; font-size: 36px;">Our Products Are Free From Chemicals And
+                Additives</h4>
+
+        </div>
+
+
+        <!--  -->
+        <!-- <div class="founder" style="display: flex; ">
+            <div class="fimage">
+                <img src="founder.webp" width="668px" height="890.27">
+            </div>
+            <div class="aboutf">
+                <p>Welcome to Vaaradhi Farms! I am Nethra and I am extremely passionate about healthy living and
+                    sustainable
+                    food
+                    practices.<br><br>
+                    I am committed to making a positive impact on the world through our business. I hope that you'll
+                    join us
+                    on this journey
+                    towards healthy living and sustainable food practices.
+                    <br><br>
+                    Thank you for choosing our organic food products, and I look forward to serving you soon.<br><br>
+                </p>
+            </div>
+        </div> -->
+
+
+    </div>
+
+
+</body>
+
+</html>
